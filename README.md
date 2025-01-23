@@ -4,7 +4,7 @@ Esta é uma solução para o [Desafio da página de receitas no Frontend Mentor]
 
 # Links
 
-- URL do site completo: [CLIQUE PARA ACESSAR](https://your-live-site-url.com)
+- URL do site completo: [CLIQUE PARA ACESSAR](https://shaylakumari.github.io/Receitas/)
 
 # Criado com
 

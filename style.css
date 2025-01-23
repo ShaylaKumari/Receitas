@@ -33,5 +33,103 @@ body {
     color: hsl(14, 45%, 36%);
 }
 
+.conteudo-total h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.conteudo-total p, .conteudo-total li {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+}
+
+.tempo-preparo {
+    font-family: "Outfit", serif;
+    background-color: hsl(330, 100%, 98%);
+    padding: 2px 20px;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+
+.tempo-preparo ul {
+    margin-left: -10px;
+    line-height: 25px;
+}
+
+.ingredientes ul, .instrucoes ol {
+    line-height: 25px;
+    margin-left: -8px;
+}
+
+.instrucoes li, .ingredientes li {
+    padding-left: 3px;
+}
+
+
+.tempo-preparo h3 {
+    color: hsl(14, 45%, 36%);
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 0;
+    opacity: 0.5;
+}
+
+.item-nutricao {
+    display: flex;
+    gap: 300px;
+}
+
+.item-nutricao-carb {
+    display: flex;
+    gap: 270px;
+}
+
+.nutricao hr {
+    margin-top: 0;
+    opacity: 0.5;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.espaco {
+    margin-left: 4px;
+    color: black;
+    font-weight: bold;
+}
+
+.espaco:hover {
+    text-decoration: underline;
+}
+
+.rodape a {
+    text-decoration: none;
+}
+
+.nutricao p:nth-of-type(2) {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.tempo-preparo li::marker,
+.ingredientes li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 14px;
+}
+
+.instrucoes li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
 
 

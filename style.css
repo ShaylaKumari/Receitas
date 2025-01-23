@@ -33,6 +33,7 @@ body {
     font-family: "Young Serif", serif;
     font-weight: 400;
     color: hsl(14, 45%, 36%);
+    margin-bottom: 0;
 }
 
 .conteudo-total h1 {
@@ -57,11 +58,13 @@ body {
 .tempo-preparo ul {
     margin-left: -10px;
     line-height: 25px;
+    margin-top: 10px;
 }
 
 .ingredientes ul, .instrucoes ol {
     line-height: 25px;
     margin-left: -8px;
+    margin-top: 10px;
 }
 
 .instrucoes li, .ingredientes li {
@@ -70,6 +73,7 @@ body {
 
 .tempo-preparo h3 {
     color: hsl(14, 45%, 36%);
+    margin-bottom: 0px;
 }
 
 hr {

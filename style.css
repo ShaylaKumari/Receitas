@@ -219,6 +219,10 @@ hr {
         line-height: 0;
     }
 
+    .referencia p:nth-of-type(2) {
+        padding-left: 4px;
+    }
+
     .item-nutricao {
         gap: 150px;
     }

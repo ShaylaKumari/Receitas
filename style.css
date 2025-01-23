@@ -7,6 +7,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 .conteudo-total {
@@ -66,7 +68,6 @@ body {
     padding-left: 3px;
 }
 
-
 .tempo-preparo h3 {
     color: hsl(14, 45%, 36%);
 }
@@ -92,18 +93,43 @@ hr {
     opacity: 0.5;
 }
 
-.rodape {
+.referencia {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
-    margin-top: 40px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
+.referencia p:nth-of-type(2) {
+    border-left: solid 1px;
+    padding-left: 15px;
+}
+
+.referencia p {
+    margin-left: 15px;
+}
+
+.seta-circulo {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.icon-seta {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.rodape {
+    text-align: center;
+}
+
 .espaco {
-    margin-left: 4px;
+    margin-left: 3px;
     color: black;
     font-weight: bold;
 }
@@ -112,7 +138,7 @@ hr {
     text-decoration: underline;
 }
 
-.rodape a {
+.referencia a {
     text-decoration: none;
 }
 
@@ -132,4 +158,68 @@ hr {
     font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+    body {
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+    }
 
+    .conteudo-total {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px; 
+        position: relative;
+    }
+
+    .imagem-comida {
+        width: 100%;
+        height: auto;
+        border-radius: 0; 
+        top: 0; 
+        left: 0; 
+        right: 0;
+    }
+
+    .img-responsive {
+        position: relative;
+        margin: -20px -20px 15px;
+    }
+
+    h2 {
+        font-size: 22px; 
+        margin-bottom: 12px; 
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .ingredientes ul, .instrucoes ol {
+        padding-left: 20px; 
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .referencia {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .referencia p {
+        line-height: 0;
+    }
+
+    .item-nutricao {
+        gap: 150px;
+    }
+    
+    .item-nutricao-carb {
+        gap: 120px;
+    }
+}

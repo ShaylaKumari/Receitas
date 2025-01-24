@@ -7,3 +7,8 @@ botaoTopo.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+// Redirecionar
+function redirecionar(url) {
+    window.location.href = url;
+}

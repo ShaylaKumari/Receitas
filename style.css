@@ -247,12 +247,44 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: white;
     width: 100%;
     height: auto;
+    font-family: "Young Serif", serif;
+    margin-bottom: 20px;
+    top: 0;
 }
 
 .livro-princ {
-    width: 100px;
+    width: 5%;
     height: auto;
+}
+
+.naveg-receitas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-padrao {
+    width: 22vw;
+    height: 25vh;
+}
+
+.campo-padrao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+}
+
+.campo-padrao p {
+    flex-wrap: wrap;
+    font-family: "Outfit", serif;
+    font-weight: bold;
+    font-size: 13pt;
+    margin-top: 10px;
 }

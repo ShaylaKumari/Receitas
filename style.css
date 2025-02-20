@@ -170,6 +170,81 @@ hr {
     font-weight: bold;
 }
 
+/* PÁGINA PRINCIPAL */ 
+
+.cabecalho-princ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #854632, #D9825E);
+    width: 100%;
+    height: auto;
+    font-family: "Young Serif", serif;
+    margin-bottom: 20px;
+    top: 0;
+}
+
+.livro-princ {
+    width: 60px;
+    height: auto;
+    padding: 5px 10px;
+}
+
+
+.icon-pesquisa {
+    margin-left: 5px;
+    width: 2%;
+    height: auto;
+    cursor: pointer;
+}
+
+.barra-pesquisa {
+    border-radius: 10px;
+    margin-left: 5%;
+    height: 25px;
+    width: 15vw;
+    border: solid 2px hsla(14, 45%, 36%, 0.705);
+}
+
+.naveg-receitas {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.img-padrao {
+    width: 22vw;
+    height: 25vh;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-padrao:hover {
+    transform: scale(1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.campo-padrao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+}
+
+.campo-padrao figcaption {
+    flex-wrap: wrap;
+    font-family: "Outfit", serif;
+    font-weight: bold;
+    font-size: 13pt;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 @media (max-width: 1024px) {
     body {
         display: block;
@@ -205,7 +280,7 @@ hr {
         margin-bottom: 12px; 
     }
 
-    h1 {
+    .conteudo-total h1 {
         font-size: 28px;
         margin-top: 0;
     }
@@ -213,6 +288,28 @@ hr {
     .ingredientes ul, .instrucoes ol {
         padding-left: 20px; 
         margin: 10px 0;
+    }
+
+    .naveg-receitas {
+        justify-content: center; /* Centraliza a única imagem visível */
+        padding-left: 0;
+        background-color: hsl(30, 54%, 90%);
+    }
+    
+    .campo-padrao {
+        width: 35%; /* Ocupa toda a largura da tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-padrao {
+        width: 35.5vw; /* A imagem aumenta para ocupar a tela */
+        height: auto;
+    }
+
+    .cabecalho-princ {
+        margin: 0;
     }
 }
 
@@ -238,82 +335,50 @@ hr {
     .item-nutricao-carb {
         gap: 120px;
     }
+
+    .naveg-receitas {
+        justify-content: center; /* Centraliza a única imagem visível */
+        padding-left: 0;
+        background-color: hsl(30, 54%, 90%);
+    }
+    
+    .campo-padrao {
+        width: 100%; /* Ocupa toda a largura da tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-padrao {
+        width: 80vw; /* A imagem aumenta para ocupar a tela */
+        height: auto;
+    }
+
+    .cabecalho-princ {
+        margin: 0;
+    }
 }
 
-/* PÁGINA PRINCIPAL */ 
+@media (max-width: 768px) {
+    .naveg-receitas {
+        justify-content: center; /* Centraliza a única imagem visível */
+        padding-left: 0;
+        background-color: hsl(30, 54%, 90%);
+    }
+    
+    .campo-padrao {
+        width: 100%; /* Ocupa toda a largura da tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.cabecalho-princ {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    width: 100%;
-    height: auto;
-    font-family: "Young Serif", serif;
-    margin-bottom: 20px;
-    top: 0;
-}
+    .img-padrao {
+        width: 80vw; /* A imagem aumenta para ocupar a tela */
+        height: auto;
+    }
 
-.livro-princ {
-    width: 4%;
-    height: auto;
-    padding: 5px 10px;
-}
-
-.cabecalho-princ h1 {
-    margin-right: 5%;
-}
-
-.icon-pesquisa {
-    margin-left: 5px;
-    width: 2%;
-    height: auto;
-    cursor: pointer;
-}
-
-.barra-pesquisa {
-    border-radius: 10px;
-    height: 25px;
-    width: 15vw;
-    border: solid 2px hsla(14, 45%, 36%, 0.705);
-}
-
-.naveg-receitas {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    flex-wrap: wrap;
-    padding-left: 50px;
-}
-
-.img-padrao {
-    width: 22vw;
-    height: 25vh;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.img-padrao:hover {
-    transform: scale(1.05) rotateX(5deg) rotateY(5deg); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
-}
-
-.campo-padrao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 15px;
-}
-
-.campo-padrao p {
-    flex-wrap: wrap;
-    font-family: "Outfit", serif;
-    font-weight: bold;
-    font-size: 13pt;
-    margin-top: 10px;
-    cursor: pointer;
+    .cabecalho-princ {
+        margin: 0;
+    }
 }

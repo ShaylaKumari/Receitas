@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f3e6d8;
+    height: 100%;
 }
 
 .conteudo-princ {
@@ -87,6 +88,8 @@ body {
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.3s;
     overflow: hidden;
+    max-width: 350px;
+    margin: auto; 
 }
 
 .campo-padrao:hover {
@@ -119,6 +122,9 @@ figcaption {
     padding: 0;
     margin-top: 20px;
     margin-bottom: -15px;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
 }
 
 .referencia {
@@ -144,7 +150,7 @@ figcaption {
 .referencia a {
     text-decoration: none;
     color: hsl(14, 45%, 36%);
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Responsividade */

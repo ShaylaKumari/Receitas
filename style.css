@@ -2,383 +2,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 body {
-    background-color: hsl(30, 54%, 90%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    background-color: #f3e6d8;
 }
 
-.conteudo-total {
-    background-color: white;
-    width: 50%;
-    height: auto;
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 10px;
+.conteudo-princ {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.cabecalho-princ {
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    background-color: #fff;
+    padding: 0px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    
 }
 
-.imagem-comida {
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.livro-princ {
+    height: 50px;
+}
+
+.cabecalho-princ h1 {
+    font-family: "Young Serif", serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #854632;
+    
+}
+
+.barra-icon-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.barra-pesquisa {
+    min-width: 260px;
+    padding: 8px;
+    border: 1px solid #854632;
+    border-radius: 20px;
+    outline: none;
+    font-family: "Outfit", serif;
+}
+
+.icon-pesquisa {
+    height: 35px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Navegação de receitas */
+.naveg-receitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.campo-padrao {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.campo-padrao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.img-padrao {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 12px;
 }
 
-.conteudo-total h2 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    color: hsl(14, 45%, 36%);
-    margin-bottom: 0;
-}
-
-.conteudo-total h1 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.conteudo-total p, .conteudo-total li {
+figcaption {
+    margin-top: 10px;
+    font-weight: 600;
     font-family: "Outfit", serif;
     font-size: 16px;
-}
-
-.tempo-preparo {
-    font-family: "Outfit", serif;
-    background-color: hsl(330, 100%, 98%);
-    padding: 2px 20px;
-    border-radius: 15px;
-    margin-top: 7px;
-}
-
-.tempo-preparo ul {
-    margin-left: -10px;
-    line-height: 25px;
-    margin-top: 10px;
-}
-
-.ingredientes ul, .instrucoes ol {
-    line-height: 25px;
-    margin-left: -8px;
-    margin-top: 10px;
-}
-
-.instrucoes li, .ingredientes li {
-    padding-left: 3px;
-}
-
-.tempo-preparo h3, .ingredientes h3, .instrucoes h3 {
     color: hsl(14, 45%, 36%);
-    margin-bottom: 0px;
-
 }
 
-.ingredientes h3, .instrucoes h3 {
-    font-family: "Outfit", serif;
-    color: hsl(14, 45%, 36%);
-    font-weight: 400;
-    margin-top: 15px;
-}
-
-hr {
+/* Rodapé */
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 0;
     margin-top: 20px;
-    margin-bottom: 0;
-    opacity: 0.5;
-}
-
-.item-nutricao {
-    display: flex;
-    gap: 300px;
-}
-
-.item-nutricao-carb {
-    display: flex;
-    gap: 270px;
-}
-
-.nutricao hr {
-    margin-top: 0;
-    opacity: 0.5;
+    margin-bottom: -15px;
 }
 
 .referencia {
     display: flex;
-    justify-content: center;
-    margin-bottom: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
 }
 
-.referencia p:nth-of-type(2) {
-    border-left: solid 1px;
-    padding-left: 15px;
-}
-
-.referencia p {
-    margin-left: 15px;
+.referencia span {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .seta-circulo {
     width: 35px;
-    height: 35px;
     cursor: pointer;
-}
-
-.icon-seta {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 0;
-    margin-top: 20px;
-}
-
-.rodape {
-    text-align: center;
-}
-
-.espaco {
-    margin-left: 3px;
-    color: black;
-    font-weight: bold;
-}
-
-.espaco:hover {
-    text-decoration: underline;
 }
 
 .referencia a {
     text-decoration: none;
-}
-
-.nutricao p:nth-of-type(2) {
-    color: hsl(14, 45%, 36%);
-    font-weight: 600;
-}
-
-.tempo-preparo li::marker,
-.ingredientes li::marker {
-    color: hsl(14, 45%, 36%);
-    font-size: 14px;
-}
-
-.instrucoes li::marker {
     color: hsl(14, 45%, 36%);
     font-weight: bold;
 }
 
-/* PÁGINA PRINCIPAL */ 
-
-.cabecalho-princ {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(45deg, #854632, #D9825E);
-    width: 100%;
-    height: auto;
-    font-family: "Young Serif", serif;
-    margin-bottom: 20px;
-    top: 0;
-}
-
-.livro-princ {
-    width: 60px;
-    height: auto;
-    padding: 5px 10px;
-}
-
-
-.icon-pesquisa {
-    margin-left: 5px;
-    width: 2%;
-    height: auto;
-    cursor: pointer;
-}
-
-.barra-pesquisa {
-    border-radius: 10px;
-    margin-left: 5%;
-    height: 25px;
-    width: 15vw;
-    border: solid 2px hsla(14, 45%, 36%, 0.705);
-}
-
-.naveg-receitas {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    flex-wrap: wrap;
-    padding-left: 50px;
-}
-
-.img-padrao {
-    width: 22vw;
-    height: 25vh;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.img-padrao:hover {
-    transform: scale(1); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
-}
-
-.campo-padrao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 15px;
-}
-
-.campo-padrao figcaption {
-    flex-wrap: wrap;
-    font-family: "Outfit", serif;
-    font-weight: bold;
-    font-size: 13pt;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-@media (max-width: 1024px) {
-    body {
-        display: block;
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
-    }
-
-    .conteudo-total {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 20px; 
-        position: relative;
-    }
-
-    .imagem-comida {
-        width: 100%;
-        height: auto;
-        border-radius: 0; 
-        top: 0; 
-        left: 0; 
-        right: 0;
-    }
-
-    .img-responsive {
-        position: relative;
-        margin: -20px -20px 15px;
-    }
-
-    h2 {
-        font-size: 22px; 
-        margin-bottom: 12px; 
-    }
-
-    .conteudo-total h1 {
-        font-size: 28px;
-        margin-top: 0;
-    }
-
-    .ingredientes ul, .instrucoes ol {
-        padding-left: 20px; 
-        margin: 10px 0;
-    }
-
-    .naveg-receitas {
-        justify-content: center; /* Centraliza a única imagem visível */
-        padding-left: 0;
-        background-color: hsl(30, 54%, 90%);
-    }
-    
-    .campo-padrao {
-        width: 35%; /* Ocupa toda a largura da tela */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-padrao {
-        width: 35.5vw; /* A imagem aumenta para ocupar a tela */
-        height: auto;
-    }
-
-    .cabecalho-princ {
-        margin: 0;
-    }
-}
-
-@media (max-width: 550px) {
-    .referencia {
-        width: 100%;
-        flex-direction: column;
-        margin-top: 0px;
-    }
-
-    .referencia p {
-        line-height: 0;
-    }
-
-    .referencia p:nth-of-type(2) {
-        padding-left: 4px;
-    }
-
-    .item-nutricao {
-        gap: 150px;
-    }
-    
-    .item-nutricao-carb {
-        gap: 120px;
-    }
-
-    .naveg-receitas {
-        justify-content: center; /* Centraliza a única imagem visível */
-        padding-left: 0;
-        background-color: hsl(30, 54%, 90%);
-    }
-    
-    .campo-padrao {
-        width: 100%; /* Ocupa toda a largura da tela */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-padrao {
-        width: 80vw; /* A imagem aumenta para ocupar a tela */
-        height: auto;
-    }
-
-    .cabecalho-princ {
-        margin: 0;
-    }
-}
-
+/* Responsividade */
 @media (max-width: 768px) {
-    .naveg-receitas {
-        justify-content: center; /* Centraliza a única imagem visível */
-        padding-left: 0;
-        background-color: hsl(30, 54%, 90%);
-    }
-    
-    .campo-padrao {
-        width: 100%; /* Ocupa toda a largura da tela */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-padrao {
-        width: 80vw; /* A imagem aumenta para ocupar a tela */
-        height: auto;
-    }
-
     .cabecalho-princ {
+        display: flex;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .livro-princ {
+        height: 40px;
+    }
+
+    .cabecalho-princ h1 {
+        text-align: center;
+        font-size: 25px;
         margin: 0;
     }
+
+    .barra-icon-pesquisa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .barra-pesquisa {
+        min-width: 100px;
+    }
+
+    .naveg-receitas {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+}
+
+@media (max-width: 545px) {
+    .referencia {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .rodape {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .referencia span {
+        display: none;
+    }
+
+    .referencia > * {
+        margin: 0;
+    }
+    
 }

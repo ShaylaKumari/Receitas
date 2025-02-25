@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: #f3e6d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.conteudo-total {
+    background-color: white;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-responsive {
+    position: relative; 
+}
+
+.imagem-comida {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.conteudo-total h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 0;
+}
+
+.conteudo-total h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    display: inline;
+    margin: 0;
+}
+
+.conteudo-total p, .conteudo-total li {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+}
+
+.tempo-preparo {
+    font-family: "Outfit", serif;
+    background-color: hsl(330, 100%, 98%);
+    padding: 2px 20px;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+
+.tempo-preparo ul {
+    margin-left: -10px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.ingredientes ul, .instrucoes ol {
+    line-height: 25px;
+    margin-left: -8px;
+    margin-top: 10px;
+}
+
+.instrucoes li, .ingredientes li {
+    padding-left: 3px;
+}
+
+.tempo-preparo h3, .ingredientes h3, .instrucoes h3 {
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 0px;
+
+}
+
+.ingredientes h3, .instrucoes h3 {
+    font-family: "Outfit", serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 0;
+    opacity: 0.5;
+}
+
+.item-nutricao {
+    display: flex;
+    gap: 300px;
+}
+
+.item-nutricao-carb {
+    display: flex;
+    gap: 270px;
+}
+
+.nutricao hr {
+    margin-top: 0;
+    opacity: 0.5;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
+
+.referencia {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.referencia span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.seta-circulo {
+    width: 35px;
+    cursor: pointer;
+}
+
+.referencia a {
+    text-decoration: none;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.espaco {
+    margin-left: 3px;
+    color: black;
+    font-weight: bold;
+}
+
+.espaco:hover {
+    text-decoration: underline;
+}
+
+.referencia a {
+    text-decoration: none;
+}
+
+.nutricao p:nth-of-type(2) {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.tempo-preparo li::marker,
+.ingredientes li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 14px;
+}
+
+.instrucoes li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+/* Voltar */
+#seta-voltar {
+    transform: rotate(-90deg);
+    height: 40px;
+    cursor: pointer;
+}
+
+.seta-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    z-index: 10;
+}
+
+/* link */
+.link {
+    width: 30px;
+    height: auto;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.titulo-link {
+    margin-top: 15px;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .conteudo-total {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px; 
+        position: relative;
+    }
+
+    .imagem-comida {
+        width: 100%;
+        height: auto;
+        border-radius: 0; 
+        top: 0; 
+        left: 0; 
+        right: 0;
+    }
+
+    .img-responsive {
+        position: relative;
+        margin: -20px -20px 15px;
+    }
+
+    h2 {
+        font-size: 22px; 
+        margin-bottom: 12px; 
+    }
+
+    .conteudo-total h1 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .ingredientes ul, .instrucoes ol {
+        padding-left: 20px; 
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .referencia {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .rodape {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .referencia span {
+        display: none;
+    }
+
+    .referencia > * {
+        margin: 0;
+    }
+
+    .item-nutricao {
+        gap: 150px;
+    }
+    
+    .item-nutricao-carb {
+        gap: 120px;
+    }
+}

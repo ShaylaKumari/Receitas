@@ -4,17 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="../images/icon-livro.png">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../individual.css">
   <script src="../script.js" defer></script>
   <title>Página de Receitas</title>
 </head>
 <body>
+    <div class="seta-voltar" onclick="window.history.back();">
+        <img src="../images/seta-circulo.png" id="seta-voltar" alt="Seta para voltar">
+    </div>
+
     <div class="conteudo-total">
 
         <div class="img-responsive">
         <img src="../images/bolo-mesclado.png" class="imagem-comida">
         </div>
-        <h1>Receita de Bolo Mesclado</h1>
+        <div class="titulo-link">
+            <h1>Receita de Bolo Mesclado</h1>
+            <a href="https://youtu.be/Oc8nJEpOaWM?si=z2PuFYDd1iZlaG1T" target="_blank">
+                <img src="../images/icon-link.png" class="link "alt="" title="Link para o Youtube">
+            </a>
+        </div>
         <p>Uma combinação perfeita de sabores e visual encantador. O bolo mesclado traz o equilíbrio entre a leveza da massa branca e o sabor rico do chocolate, formando um desenho marmorizado que surpreende a cada fatia. Ideal para acompanhar um café ou alegrar qualquer lanche da tarde.</p>
 
         <div class="tempo-preparo">
@@ -81,12 +90,12 @@
         </div>
 
         <div class="rodape">
+            <div class="referencia">
+            <p>Desafio do <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><span>|</span></p>
+            <p>Desenvolvido por <a href="https://github.com/ShaylaKumari" target="_blank">Ananda Shayla</a></p>
+            </div>
             <div class="icon-seta">
                 <img src="../images/seta-circulo.png" class="seta-circulo" id="seta-circulo">
-            </div>
-            <div class="referencia">
-            <p>Desafio do <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="espaco">Frontend Mentor </span></a></p>
-            <p>Desenvolvido por <a href="https://github.com/ShaylaKumari" target="_blank"><span class="espaco">Ananda Shayla</span></a></p>
             </div>
         </div>
 
